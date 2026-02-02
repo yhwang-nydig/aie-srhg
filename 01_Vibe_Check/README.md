@@ -45,20 +45,20 @@ You will be required to submit a link to your GitHub, as well as screenshots of 
 Please evaluate your system on the following questions:
 
 1. Explain the concept of object-oriented programming in simple terms to a complete beginner.
-    - Aspect Tested:
+    - Aspect Tested: **Explanation & Teaching Ability** - Can the system explain complex technical concepts in accessible language?
 2. Read the following paragraph and provide a concise summary of the key points…
-    - Aspect Tested:
+    - Aspect Tested: **Reading Comprehension & Summarization** - Can the system extract and synthesize key information accurately?
 3. Write a short, imaginative story (100–150 words) about a robot finding friendship in an unexpected place.
-    - Aspect Tested:
+    - Aspect Tested: **Creative Writing & Storytelling** - Can the system generate creative, coherent narratives with appropriate tone?
 4. If a store sells apples in packs of 4 and oranges in packs of 3, how many packs of each do I need to buy to get exactly 12 apples and 9 oranges?
-    - Aspect Tested:
+    - Aspect Tested: **Mathematical Reasoning & Problem Solving** - Can the system perform logical calculations and provide clear answers?
 5. Rewrite the following paragraph in a professional, formal tone…
-    - Aspect Tested:
+    - Aspect Tested: **Style Transfer & Tone Adjustment** - Can the system adapt content to different communication styles?
 
 #### ❓Question #1:
 
 Do the answers appear to be correct and useful?
-##### ✅ Answer:
+##### ✅ Answer: Yes, the system I made for AI Engineer Challenge was a general-purpose bot so most of these were correct and useful. 
 
 ---
 
@@ -73,17 +73,17 @@ Now test your assistant with personal questions it should be able to help with. 
 - "What can I cook with [enter ingredients] in fridge."
 
 ##### Your Prompts and Results:
-1. Prompt:
-   - Result:
-2. Prompt:
-   - Result:
-3. Prompt:
-   - Result:
+1. Prompt: Help me think through the pros and cons of LangGraph
+   - Result: Certainly! LangGraph is a relatively new concept/tool that integrates language models with knowledge graphs to enhance natural language understanding and reasoning. Here are some general pros and cons to consider when thinking about LangGraph or similar language model + knowledge graph integrations: ### Pros of LangGraph 1. **Enhanced Context Understanding** By leveraging structured knowledge graphs, LangGraph can provide richer context to language models, improving comprehension of entities and relationships. 2. **Improved Reasoning and Inference** Knowledge graphs facilitate logical reasoning over data, allowing LangGraph to perform more accurate and explainable inferences compared to standalone language models. 3. **Disambiguation of Entities** Knowledge graphs help resolve ambiguities by linking mentions in text to specific entities, which improves accuracy in tasks like question answering and information extraction. 4. **Explainability** Integrating explicit graph structures allows for more interpretable reasoning paths, which is valuable for trust and transparency. 5. **Better Handling of Complex Queries** LangGraph can better manage multi-hop queries and complex relational information that typical language models may struggle with. 6. **Potential for Domain Adaptation** Knowledge graphs can be tailored to specific domains, enabling LangGraph to perform well in specialized areas (e.g., medicine, finance). ### Cons of LangGraph 1. **Complexity and Implementation Overhead** Combining language models with knowledge graphs requires additional engineering, data integration, and system complexity. 2. **Knowledge Graph Completeness and Maintenance** The performance depends heavily on the quality and coverage of the underlying knowledge graph, which can be incomplete or outdated. 3. **Latency and Performance Issues** Querying and traversing knowledge graphs can add latency compared to using a standalone language model. 4. **Scalability Challenges** Large knowledge graphs require efficient storage and retrieval mechanisms; scaling this integration can be challenging. 5. **Integration Complexity with LLMs** Aligning unstructured language model outputs with structured graph data requires sophisticated alignment and fusion techniques. 6. **Cost** Maintaining knowledge graphs and the infrastructure to integrate them with language models can be costly in terms of resources and labor. --- If you have a particular use case or specific features of LangGraph you want to analyze, feel free to share more details
+2. Prompt: Help me plan a birthday surprise for Jaden
+   - Result: I'd love to help you plan a birthday surprise for Jaden! To make it extra special, could you tell me a bit more about Jaden? For example: - What are Jaden’s interests or hobbies? - Do you have a preferred location or setting (home, outdoors, a special venue)? - How many people are you thinking of inviting? - Any particular budget or theme in mind? With this info, I can suggest a personalized surprise plan!
+3. Prompt: Draft a polite follow-up slack message to a Darren in security who hasn't responded.
+   - Result: Hi Darren, just wanted to follow up on my earlier message when you have a chance. Thanks!
 
 #### ❓Question #2:
 
 Are the vibes of this assistant's answers aligned with your vibes? Why or why not?
-##### ✅ Answer:
+##### ✅ Answer: Yes and no. I have a general purpose bot, so it can help with a wide range of tasks, but doesn't have my personal voice. 
 
 ---
 
@@ -95,15 +95,15 @@ Now test your assistant with questions that would require capabilities beyond ba
 - "What time should I leave for the airport?"
 
 ##### Your Prompts and Results:
-1. Prompt:
-   - Result:
-2. Prompt:
-   - Result:
+1. Prompt: What does my schedule look like tomorrow?
+   - Result: I don’t have access to your personal calendar. If you share your schedule or give me details about your appointments, I can help summarize or organize it for you!
+2. Prompt: What time should I leave for the airport?
+   - Result: I can help with that! Could you please provide a few details? For example: - What time is your flight? - Which airport are you leaving from? - How long does it usually take to get to the airport from your location? - Are you checking bags or just going with carry-on? - Do you prefer to arrive early to allow extra time for security and other procedures? With this information, I can give you a more accurate recommendation.
 
 #### ❓Question #3:
 
 What are some limitations of your application?
-##### ✅ Answer:
+##### ✅ Answer: It does not have access to my schedule or flight information. 
 
 ---
 
