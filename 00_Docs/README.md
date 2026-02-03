@@ -11,10 +11,10 @@ Each `module` in `Modules` s designed to be read _before watching lectures and c
 Although we will sequence material slightly differently than we have shown below, this formulation is useful for seeing the very few lego blocks we actually need to learn.
 
 #### "Classic" Agentic RAG
-- [✨ Vibe Checking](./Modules/01_Intro_and_Vibe_Check.md)
-- [🗃️ Dense Vector Retrieval](./Modules/02_Dense_Vector_Retrieval.md)
-- 🔁 The Agent Loop
-- 🕴️ Agentic RAG
+- [✨ Vibe Checking](./Modules/01_Intro_and_Vibe_Check/README.md)
+- [🗃️ Dense Vector Retrieval](./Modules/02_Dense_Vector_Retrieval/README.md)
+- [🔁 The Agent Loop](./Modules/03_The_Agent_Loop/README.md)
+- [🕴️ Agentic RAG](./Modules/04_Agentic_RAG_From_Scratch/README.md)
 
 #### "Complex" Agentic RAG
 - 🔄 Multi-Agent Applications
