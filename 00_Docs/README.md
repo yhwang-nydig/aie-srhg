@@ -30,4 +30,4 @@ Although we will sequence material slightly differently than we have shown below
 #### Production Deployments
 - [🔌 Model Context Protocol](./Modules/12_MCP)
 - [🚢 Agent Servers](./Modules/13_Agent_Servers)
-- 🛤️ Guardrails & Caching
+- [🛤️ Guardrails & Caching](./Modules/14_Guardrails_Caching)
