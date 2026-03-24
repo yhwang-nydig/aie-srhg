@@ -234,6 +234,46 @@ def analyze_portfolio_allocation(
 
 
 @mcp.tool()
+def compare_funds(fund_a: str, fund_b: str) -> str:
+    """Compare two Stone Ridge funds side-by-side.
+
+    Args:
+        fund_a: First fund identifier (e.g., 'sre', 'bitcoin', 'reinsurance', 'longtail re').
+        fund_b: Second fund identifier (e.g., 'sre', 'bitcoin', 'reinsurance', 'longtail re').
+    """
+    def _resolve(name: str):
+        key = name.strip().lower()
+        if key in FUNDS:
+            return FUNDS[key]
+        for k, v in FUNDS.items():
+            if key in k or key in v["name"].lower():
+                return v
+        return None
+
+    a = _resolve(fund_a)
+    b = _resolve(fund_b)
+
+    if not a:
+        return f"Fund '{fund_a}' not found. Available: {', '.join(f['name'] for f in FUNDS.values())}"
+    if not b:
+        return f"Fund '{fund_b}' not found. Available: {', '.join(f['name'] for f in FUNDS.values())}"
+
+    def _themes(fund):
+        return "\n".join(f"  - {t}" for t in fund["key_themes"])
+
+    return (
+        f"## Fund Comparison: {a['name']} vs {b['name']}\n\n"
+        f"### {a['name']}\n{a['overview']}\n\nKey themes:\n{_themes(a)}\n\n"
+        f"### {b['name']}\n{b['overview']}\n\nKey themes:\n{_themes(b)}\n\n"
+        f"### Complementary Analysis\n"
+        f"Both funds reflect Stone Ridge's philosophy of harvesting risk premiums from "
+        f"domains that are structurally underpriced by traditional finance. Together, "
+        f"they provide diversification across independent, uncorrelated risk factors — "
+        f"a core tenet of Stone Ridge's Bayesian portfolio construction approach."
+    )
+
+
+@mcp.tool()
 def search_investor_letter(query: str, section: str = "all") -> str:
     """Keyword search across sections of the Stone Ridge 2025 Investor Letter.
 

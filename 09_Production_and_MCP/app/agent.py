@@ -625,3 +625,29 @@ def build_graph():
 
 
 graph = build_graph().compile()
+
+
+# ---------------------------------------------------------------------------
+# 12. Simple Graph (no guardrails, no helpfulness)
+# ---------------------------------------------------------------------------
+
+
+def build_simple_graph():
+    """Build a minimal agent graph — just agent + tool loop, no guardrails or helpfulness."""
+    tool_node = ToolNode(get_tool_belt())
+
+    g = StateGraph(AgentState)
+    g.add_node("agent", agent)
+    g.add_node("action", tool_node)
+
+    g.set_entry_point("agent")
+    g.add_conditional_edges(
+        "agent",
+        lambda state: "action" if getattr(state["messages"][-1], "tool_calls", None) else END,
+        {"action": "action", END: END},
+    )
+    g.add_edge("action", "agent")
+    return g
+
+
+simple_graph = build_simple_graph().compile()
